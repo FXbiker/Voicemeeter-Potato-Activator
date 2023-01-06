@@ -1,4 +1,4 @@
-# Voicemeeter-Potato-Activator-kinda-
+# Voicemeeter-Potato-Activator (Kinda)
 Resets the cooldown timer in the registry every time you try to open voicemeeter
 
 - To use: Download .bat file from repo and run as admin
