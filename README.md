@@ -10,7 +10,7 @@ Re-run if the timer returns (maybe after an update) and report on github
 
 The script is simple with two lines, you can read it for yorself but it simple changes the "code" value in reg add "HKEY_CURRENT_USER\VB-Audio\VoiceMeeter" to "738879" and launches voicemeeterx64
 
-#Credit: 
+# Credit: 
 
 Download Voicemeeter: https://voicemeeter.com/
 
