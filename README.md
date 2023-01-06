@@ -11,4 +11,5 @@ Download Voicemeeter: https://voicemeeter.com/
 Legitimate activation:
 
 USD - https://shop.vb-audio.com/en/win-apps/21-voicemeeter8.html?SubmitCurrency=1&id_currency=2
+
 EU - https://shop.vb-audio.com/en/win-apps/21-voicemeeter8.html?SubmitCurrency=1&id_currency=1
