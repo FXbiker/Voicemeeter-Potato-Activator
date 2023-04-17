@@ -2,7 +2,6 @@ import datetime
 import os
 import winreg
 t = datetime.datetime.now().date()
-
 def regkey_value(path, name="", start_key=None):
    if isinstance(path, str):
       path = path.split("\\")
@@ -21,22 +20,18 @@ def regkey_value(path, name="", start_key=None):
             desc = winreg.EnumValue(handle, i)
             i += 1
          return desc[1]
-
-with open('data.txt', 'a', encoding='utf-8') as f:
+with open('data.txt', 'r') as f:
    try:
-      f = ""
-      f = f.read()
+      f=f.read()
    except:
       pass
    if f == "":
       with open("data.txt", 'w', encoding='utf-8') as o:
          o.write(str(t))
    else:
-      nxt = datetime.datetime.strptime(f, str("%Y-%m-%d")).date()+ datetime.timedelta(days=32)
-      if nxt == t:
-         key = regkey_value(r"HKEY_CURRENT_USER\VB-Audio\VoiceMeeter", "code") + 32
-         print(key)
-         os.system(f'reg add "HKEY_CURRENT_USER\VB-Audio\VoiceMeeter" /v code /t REG_DWORD /d {key} /f')
-         with open("data.txt", 'w', encoding='utf-8') as o:
-            o.write(str(t))
+      diff = (t-datetime.datetime.strptime(f, str("%Y-%m-%d")).date()).days
+      key = regkey_value(r"HKEY_CURRENT_USER\VB-Audio\VoiceMeeter", "code") + diff
+      os.system(f'reg add "HKEY_CURRENT_USER\VB-Audio\VoiceMeeter" /v code /t REG_DWORD /d {key} /f')
+      with open("data.txt", 'w', encoding='utf-8') as o:
+         o.write(str(t))
 os.system (r'start "" "C:\Program Files (x86)\VB\Voicemeeter\voicemeeter8x64.exe"')
