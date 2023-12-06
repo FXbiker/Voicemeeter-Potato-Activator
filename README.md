@@ -1,5 +1,8 @@
 # ----WARNING----
 - DONT USE BAT FILE
+- ONLY WORKS ON OLDER VM VERSIONS (tested on v3.0.1.8)
+    download v3.0.1.8 (origin: webarchive.org): https://www.mediafire.com/file/sswni1zifdfgquo/Voicemeeter8Setup.exe/file
+
 (Read Issues)
 
 # Voicemeeter-Potato-Activator (Kinda)
