@@ -34,4 +34,4 @@ Legitimate activation:
 
 USD - https://shop.vb-audio.com/en/win-apps/21-voicemeeter8.html?SubmitCurrency=1&id_currency=2
 
-EU - https://shop.vb-audio.com/en/win-apps/21-voicemeeter8.html?SubmitCurrency=1&id_currency=1
+EUR - https://shop.vb-audio.com/en/win-apps/21-voicemeeter8.html?SubmitCurrency=1&id_currency=1
